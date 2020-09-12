@@ -6,8 +6,6 @@
 
 A pretty and customizable web app to deploy your DL model with ease
 
-<a href="https://www.buymeacoffee.com/fing" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png" alt="Buy Me A Coffee"></a>
-
 ## Getting Started in 10 Minutes
 
 - Clone this repo 
@@ -46,7 +44,7 @@ With **[Docker](https://www.docker.com)**, you can quickly build and run the ent
 
 ```shell
 # 1. First, clone the repo
-$ git clone https://github.com/mtobeiyf/keras-flask-deploy-webapp.git
+$ git clone https://github.com/VMAG-combat/dockrized-neural-photo-editor-using-GAN
 $ cd keras-flask-deploy-webapp
 
 # 2. Build Docker image
@@ -64,7 +62,7 @@ It's easy to install and run it on your computer.
 
 ```shell
 # 1. First, clone the repo
-$ git clone https://github.com/mtobeiyf/keras-flask-deploy-webapp.git
+$ git clone https://github.com/VMAG-combat/dockrized-neural-photo-editor-using-GAN
 $ cd keras-flask-deploy-webapp
 
 # 2. Install Python packages
@@ -93,13 +91,11 @@ It's also easy to customize and include your models in this app.
 
 Place your trained `.h5` file saved by `model.save()` under models directory.
 
-Check the [commented code](https://github.com/mtobeiyf/keras-flask-deploy-webapp/blob/master/app.py#L37) in app.py.
 
 ### Use other pre-trained model
 
 See [Keras applications](https://keras.io/applications/) for more available models such as DenseNet, MobilNet, NASNet, etc.
 
-Check [this section](https://github.com/mtobeiyf/keras-flask-deploy-webapp/blob/master/app.py#L26) in app.py.
 
 ### UI Modification
 
@@ -124,36 +120,7 @@ Run the script and hide it in background with `tmux` or `screen`.
 $ python app.py
 ```
 
-You can also use gunicorn instead of gevent
-```
-$ gunicorn -b 127.0.0.1:5000 app:app
-```
-
-More deployment options, check [here](https://flask.palletsprojects.com/en/1.1.x/deploying/wsgi-standalone/)
-
-### Set up Nginx
-
-To redirect the traffic to your local app.
-Configure your Nginx `.conf` file.
-
-```
-server {
-  listen  80;
-
-  client_max_body_size 20M;
-
-  location / {
-      proxy_pass http://127.0.0.1:5000;
-  }
-}
-```
-
 </details>
 
-## Future Plan
 
-- [ ] Support detection and segmentation models
 
-## More Resources
-
-[Building a simple Keras + deep learning REST API](https://blog.keras.io/building-a-simple-keras-deep-learning-rest-api.html)
