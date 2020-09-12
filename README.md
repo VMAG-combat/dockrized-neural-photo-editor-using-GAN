@@ -45,13 +45,13 @@ With **[Docker](https://www.docker.com)**, you can quickly build and run the ent
 ```shell
 # 1. First, clone the repo
 $ git clone https://github.com/VMAG-combat/dockrized-neural-photo-editor-using-GAN
-$ cd keras-flask-deploy-webapp
+$ cd dockrized-neural-photo-editor-using-GAN
 
 # 2. Build Docker image
-$ docker build -t keras_flask_app .
+$ docker build -t dockrized_neural_photo_editor_using_GAN .
 
 # 3. Run!
-$ docker run -it --rm -p 5000:5000 keras_flask_app
+$ docker run -it --rm -p 5000:5000 dockrized_neural_photo_editor_using_GAN
 ```
 
 Open http://localhost:5000 and wait till the webpage is loaded.
