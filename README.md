@@ -33,8 +33,6 @@ A pretty and customizable web app to deploy your DL model with ease
   <img src="https://user-images.githubusercontent.com/5097752/71062921-aeef6b00-2139-11ea-8b23-6b9eb1e326ca.png" height="330px" alt="">
 </p>
 
-_If you need to use Python 2.x or TensorFlow 1.x, check out the [legacy](https://github.com/mtobeiyf/keras-flask-deploy-webapp/tree/legacy) snapshot_
-
 
 ------------------
 
@@ -63,7 +61,7 @@ It's easy to install and run it on your computer.
 ```shell
 # 1. First, clone the repo
 $ git clone https://github.com/VMAG-combat/dockrized-neural-photo-editor-using-GAN
-$ cd keras-flask-deploy-webapp
+$ cd dockrized-neural-photo-editor-using-GAN
 
 # 2. Install Python packages
 $ pip install -r requirements.txt
