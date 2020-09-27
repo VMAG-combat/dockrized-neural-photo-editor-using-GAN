@@ -1,3 +1,9 @@
+
+*.pyc
+.*.swp
+.cache
+*.npz
+
 ### Python ###
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -28,3 +34,4 @@ models/*
 
 !uploads/README.md
 !models/README.md
+>>>>>>> 4f7df143066e48353993f49ceb9aab2bf0de21f2
