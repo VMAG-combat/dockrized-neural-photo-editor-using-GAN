@@ -1,0 +1,9 @@
+Lasagne==0.1
+numpy==1.19.2
+Pillow==7.2.0
+scipy==1.5.2
+six==1.15.0
+Theano==1.0.5
+tk==0.1.0
+tkcolorpicker==2.1.3
+
