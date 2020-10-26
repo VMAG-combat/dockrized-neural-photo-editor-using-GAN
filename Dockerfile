@@ -1,17 +1,13 @@
-FROM python:latest
+FROM python:3.7
 
-ENV DISPLAY=127.0.0.1:0.0
+RUN mkdir -p /code
 
-RUN mkdir -p /ML
+ADD code /code
 
-ADD ML /ML
-
-WORKDIR /ML
+WORKDIR /code
 
 RUN pip3 install -r requirements.txt
-RUN pip3 install --upgrade https://github.com/Lasagne/Lasagne/archive/master.zip
-RUN pip3 install --upgrade https://github.com/Theano/Theano/archive/master.zip
+RUN pip3 install streamlit-0.68.0-py2.py3-none-any.whl
+RUN pip3 install tensorflow==1.15.4
 
-ENTRYPOINT ["python3"]
-
-CMD ["NPE.py"]
+CMD [ "streamlit", "run", "streamlit_app.py" ]
