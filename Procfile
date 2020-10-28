@@ -1,1 +1,2 @@
-web: cd code/ && streamlit run [name-of-app].py
+web: cd code/ && streamlit run streamlit_app.py
+
